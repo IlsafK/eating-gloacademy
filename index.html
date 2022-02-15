@@ -24,7 +24,9 @@
             </button>
         </form>
         <div class="auth">
-            <a href="#" class="login">Войти</a>
+            <span class="user">jb</span>
+            <button class="button-login style-login">Войти</button>
+            <button class="login-out style-login">Выйти</button>
         </div>
         <!-- /.auth -->
         <a href="#" class="shopping-cart">
@@ -42,6 +44,25 @@
                 </svg>
                 <span class="shopping-counter">12</span>
         </a>
+        <div class="modal-auth modal-style">
+            <div class="modal-window">
+                    <h2 class="modal-auth-name">Авторизация</h2>
+                <form action="index.html" id="form" class="modal-form">
+                    <div class="modal-login-content">
+                        <span class="login-name">Логин:</span>
+                        <input type="search" id="login" class="modal-login">
+                    </div>
+                    <div class="modal-password-content">
+                        <span class="password-name">Пароль:</span>
+                        <input type="search" id="password" class="modal-login">
+                    </div>
+                    <button class="button-modal-auth button">Вход</button>
+                </form>
+                <div class="modal-form-content">
+                    <button class="button-modal-close button">Выход</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="main">
         <!-- /.slider -->

@@ -9,9 +9,60 @@ body {
     margin: auto;
 }
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 10px 0px;
+}
+.modal-auth {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 200px);
+    z-index: 10;
+    display: none;
+}
+.modal-window {
+    background: #F6FDC8;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+}
+.modal-auth-name {
+    margin-left: 30px;
+}
+.button-modal-auth {
+    margin: auto;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+    margin-right: 5px;
+}
+.button-modal-close {
+    margin: auto;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+}
+.modal-form {
+    width: 250px;
+    margin: auto;
+}
+.modal-form-content{
+    display: flex;
+    align-items: center;
+}
+.modal-login-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+.modal-login {
+    margin-left: auto;
+    border: none;
+}
+.modal-password-content {
+    display: flex;
+    margin-bottom: 15px;
 }
 .search-input {
     background-color: transparent;
@@ -43,10 +94,21 @@ body {
     cursor: pointer;
 }
 .auth {
+    display: flex;
+    align-items: center;
     margin-left: auto;
 }
-.login {
+.user {
+    background: rgb(208,203,40);
+    background: linear-gradient(90deg, rgba(208,203,40,0.9419117988992471) 18%, rgba(0,255,166,1) 100%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: none;
+}
+.style-login {
     background: #ebebeb;
+    border: none;
     border-radius: 50px;
     padding: 16px 30px;
     display: block;
@@ -54,6 +116,10 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    cursor: pointer;
+}
+.login-out {
+    display: none;
 }
 .shopping-cart {
     position: relative;
